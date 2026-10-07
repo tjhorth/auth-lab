@@ -1,0 +1,40 @@
+# Local provider/module cache (rebuilt by `terraform init`)
+**/.terraform/*
+
+# State files (state belongs in the S3 backend, never in Git)
+*.tfstate
+*.tfstate.*
+
+# Saved plan files (can contain sensitive values)
+*.tfplan
+tfplan
+destroy.tfplan
+plan.txt
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that may hold secrets or personal values
+*.auto.tfvars
+*.auto.tfvars.json
+secrets.tfvars
+*.secret.tfvars
+
+# Local override files (personal tweaks that shouldn't affect others)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config (can contain HCP Terraform API tokens)
+.terraformrc
+terraform.rc
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# env
+.env
